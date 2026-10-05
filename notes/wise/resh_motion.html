@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>레쉬 획 동영상</title>
+<style>
+  body { margin:0; min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center;
+         background:#fff; color:#3F2A3E; font-family:"Nanum Gothic","Noto Sans KR","Malgun Gothic",sans-serif; }
+  svg { width:min(70vw, 360px); height:auto; }
+  .stroke { fill:none; stroke:#EE8C2B; stroke-width:34; stroke-linecap:round; stroke-linejoin:round;
+            stroke-dasharray:420; stroke-dashoffset:420; animation:draw 6s ease-in-out infinite; }
+  @keyframes draw {
+    0%   { stroke-dashoffset:420; }
+    45%  { stroke-dashoffset:0; }
+    75%  { stroke-dashoffset:0; }
+    100% { stroke-dashoffset:420; }
+  }
+  p { font-size:15px; color:#655D68; margin:18px 0 0; text-align:center; max-width:320px; line-height:1.7; }
+</style>
+</head>
+<body>
+<svg viewBox="0 0 300 320" aria-label="레쉬(ר) 획이 그려지는 모습">
+  <path class="stroke" d="M 60 70 L 190 70 Q 240 70 240 120 L 240 280"/>
+</svg>
+<p>ר · 레쉬<br>왼쪽에서 오른쪽으로 가다가 둥글게 꺾여 아래로 내려오는 한 획입니다.<br>모양만 눈에 익히고 놓습니다.</p>
+</body>
+</html>
